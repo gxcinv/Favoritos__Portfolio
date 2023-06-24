@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,100&family=Ubuntu:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+--primeira-cor: black;
+--segunda-cor: #43C4F4;
+--terceira-cor: #A30900;
+--quarta-cor: antiquewhite;
+
+}
+body{
+    height: 100vh;  
+    background-color: var(--primeira-cor);
+    box-sizing: border-box;
+    
+}
+
+.cabecalho{
+    font-family:'Ubuntu', sans-serif ;
+    font-size: 1.25rem;
+}
+.navegar__cabecalho{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    
+}
+.links__cabecalho{
+    color:var(--quarta-cor) ;
+    text-decoration: none;
+    padding: 1%;
+    background-color: var(--segunda-cor);
+    border-radius: 45px;
+
+}
+.number__one {
+    
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.escritos {
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+
+}
+.escritos__um{
+    color: var(--quarta-cor);
+    font-size: 2.25rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+.escritos__dois{
+    font-size: 1.5rem;
+    font-family:'Libre Franklin', sans-serif;
+    font-weight: 100;
+    color: var(--quarta-cor);
+}
+.destaque {
+    color: var(--segunda-cor);
+    font-size: 2.5rem;
+}
+
+
+.fotos__inicial{
+    display: flex;
+justify-content: center;   
+    
+}
+.tamanho__fotos{
+    width: 100%;
+}
+.links__cabecalho:hover{
+    background-color: #2884F4;
+    
+}
+
+.primeira__linha {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    
+
+}
+.quadrado__primeira {
+    text-decoration: none;
+    color: azure;
+    font-family:'Libre Franklin', sans-serif ;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3%;
+}
+
+@media (max-width: 1200px) {
+    
+    .cabecalho{
+        justify-content: center;
+        font-size: 100%;
+       
+    }
+    
+    .number__one {
+        
+        flex-direction: column-reverse;
+        justify-content: center;
+
+    }
+    .a__principal {
+        flex-direction: column-reverse;
+    }
+    .lugar__das__fotos {
+        padding-top:5%;
+    }
+    .fotos__inicial {
+        width: auto;
+    }
+    .primeira__linha{
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+    }
+}
