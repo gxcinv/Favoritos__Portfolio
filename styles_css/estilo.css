@@ -21,7 +21,7 @@ body{
 
 .cabecalho{
     font-family:'Ubuntu', sans-serif ;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 .navegar__cabecalho{
     display: flex;
@@ -30,13 +30,26 @@ body{
     
 }
 .links__cabecalho{
-    color:var(--quarta-cor) ;
     text-decoration: none;
     padding: 1.5%;
-    background-color: var(--segunda-cor);
-    border-radius: 45px;
-
+    color: var(--segunda-cor);
+    position: relative;
+   
 }
+.links__cabecalho::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: var(--segunda-cor);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+.links__cabecalho:hover::after {
+    width: 100%;
+}
+
 .number__one {
     
     display: flex;
@@ -77,15 +90,12 @@ justify-content: center;
 .tamanho__fotos{
     width: 100%;
 }
-.links__cabecalho:hover{
-    background-color: #2884F4;
-    
-}
+
 
 .primeira__linha {
     display: flex;
     justify-content: center;
-    padding: 2%;
+    padding: 3%;
     gap: 50px;
     
 
@@ -100,7 +110,7 @@ justify-content: center;
     gap: 2%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 920px) {
     
     .cabecalho{
         justify-content: center;
@@ -140,8 +150,13 @@ justify-content: center;
     }
     .links__cabecalho{
         color:var(--quarta-cor) ;
-        background-color: black;
+        background-color: var(--segunda-cor);
         text-decoration: none;
         border-radius: 45px;
+
+}
+.links__cabecalho:hover{
+    background-color: #2884F4;
+    
 }
 }
