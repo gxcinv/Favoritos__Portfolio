@@ -12,6 +12,9 @@
 --quarta-cor: antiquewhite;
 
 }
+.ly {
+    color: rgb(40, 40, 40);
+}
 .cabecalho-botaos{
     display: none;
 }
