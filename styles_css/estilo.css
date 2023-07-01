@@ -12,6 +12,9 @@
 --quarta-cor: antiquewhite;
 
 }
+.cabecalho-botaos{
+    display: none;
+}
 body{
     height: 100vh;  
     background-color: var(--primeira-cor);
@@ -134,7 +137,7 @@ ul li.item-menu {
 }
 .destaque {
     color: var(--segunda-cor);
-    font-size: 2.5rem;
+    font-size: 2.25rem;
 }
 
 
@@ -146,16 +149,14 @@ justify-content: center;
 .tamanho__fotos{
     width: 100%;
 }
-.tamanho__fotos1 {
-    width: 50%;
-    margin-left: 16%;
-}
+
 
 .primeira__linha {
     margin-left: 10%;
     display: flex;
     justify-content: center;
     gap: 50px;
+    padding-bottom: 10%;
     
 
 }
@@ -163,7 +164,7 @@ justify-content: center;
     text-decoration: none;
     color: azure;
     font-family:'Libre Franklin', sans-serif ;
-    font-size: 1.25rem;
+    font-size: 1rem;
     display: flex;
     flex-direction: column-reverse;
     gap: 2%;
@@ -173,6 +174,7 @@ justify-content: center;
     .cabecalho{
         display: none;
     }
+
     .escritos__um{
         font-size: 1.5rem;
     }
@@ -180,7 +182,7 @@ justify-content: center;
         display: block;
     }
     nav.index-cel-menu-lateral {
-        width: 22px;
+        width: 30px;
         height: 100%;
         padding: 15% 0px 0px 1%;
         position: fixed;
@@ -217,89 +219,69 @@ justify-content: center;
     
     }
     ul {
-        margin-top: 2%;
+       padding-top: 50px;
         height: 7%;
         list-style-type: none;
+        
     }
     
     ul li.index-cel-item-menu a {
         color: var(--segunda-cor);
         text-decoration: none;
-        font-size: .92rem;
-        margin-top: 10%;
+        font-size: 1.25rem;
         padding: 3% 4%;
         display: flex;
         margin-left: 6px;
     
     }
     ul li.index-cel-item-menu a .index-cel-texto-link {
-        margin-left: 10%;
+        margin-left: 15%;
         font-family: 'Libre Franklin', sans-serif;
         
     }
-    /* ul li.index-cel-item-menu:hover {
-        background-color: var(--segunda-cor);
-        .texto-link{color: aliceblue;}
-        
-        .icone {color: antiquewhite;} */
-    /* } */
+   
     ul li.item-menu {
         transition: .4s;
     }
-    .menu-lateral {
-        display: block;
-    }
-    nav.menu-lateral {
-        width: 22px;
-        height: 100%;
-        padding: 15% 0px 0px 1%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        overflow: hidden;
-        transition: .5s;
-    }
-    nav.menu-lateral:hover {
-        width: 50%;
-        color: #FFF;
-        background-color: rgb(20, 20, 20);
-    }
-    .btn-expandir {
-        width: 100%;
-        padding-left: 5px;
-        
-    }
-    .btn-expandir > i {
-        color: var(--segunda-cor);
-        font-size: 1.30rem;
-        cursor: pointer;
-        margin-bottom: 20%;
-    }
-    ul {
-        margin-top: 0%;
-        height: 7%;
-        list-style-type: none;
-    }
-    
-    ul li.item-menu a {
-        color: var(--segunda-cor);
-        text-decoration: none;
-        margin-top: 10%;
-        font-size: .92rem;
-        padding: 3% 4%;
-        display: flex;
-        margin-left: 6px;
-    
-    }
-    ul li.item-menu a .texto-link {
-        margin-left: 10%;
-        font-family: 'Libre Franklin', sans-serif;
-        
+
+    .menu-lateral{
+        display: none;
     }
 
-    .number__one{
+    .cabecalho-botaos{
         display: flex;
         align-items: center;
-        padding-left: 15%;
+ 
     }
+   .menu-em-cima-botaos-lateral{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    gap: 20%;
+    justify-content: center;
+    
+
+    }
+    .cima-icone{
+        list-style-type: none;
+        color: var(--segunda-cor);
+        font-size: 100%;
+       
+    }
+    .a__principal {
+        padding-top: 7%;
+        align-items: center;
+
+    }
+    .number__one{
+   display: flex;
+   padding-left: 15%;
+}
+.fotos__inicial {
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+}
+
 }
